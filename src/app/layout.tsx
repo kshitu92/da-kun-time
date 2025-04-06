@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" className="light">
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-900 min-h-screen`}>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
