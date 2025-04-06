@@ -1,15 +1,20 @@
 # Da Kun Time (दा कुन Time)
 
-A minimalist timezone converter webapp focused on Nepal Standard Time and Central Standard Time conversions.
+A minimalist timezone converter webapp.
 
 ## 🎯 Problem Statement
 
-"दा कुन Time?" (What time is it?) - A common question from my team in Nepal when setting up meetings.
+"दा कुन Time?" (Brother what time is it?) - A common question from my team in Nepal when setting up meetings.
 
 While many timezone converters exist, I needed something that specifically offers:
 - An intuitive slider interface for time conversion
 - Nepal Standard Time (UTC+5:45) and Central Standard Time (UTC-6:00) as defaults
 - Simple, free, and no ads
+
+## 💡 Motivation
+
+- Desire to explore modern AI development tools like Cursor
+- Practice with "vibe coding" - coding for fun and learning
 
 ## ✨ Features
 
@@ -26,11 +31,8 @@ While many timezone converters exist, I needed something that specifically offer
 - **Frontend**: React.js with TypeScript
 - **Styling**: Tailwind CSS
 - **Time Management**: Date-fns library
-- **Development Tools**: 
-  - [Cursor](https://cursor.sh/) - AI-powered code editor
-  - Vite - Build tool
 
-## 🚀 Getting Started
+## 🚀 Local Development
 
 1. **Clone the repository**
    ```bash
@@ -47,37 +49,6 @@ While many timezone converters exist, I needed something that specifically offer
    ```bash
    npm run dev
    ```
-
-## 💡 Motivation
-
-This project was born from:
-- The need for a specialized timezone converter
-- Desire to explore modern development tools like Cursor
-- Practice with "vibe coding" - coding for fun and learning
-
-## 🔄 Development Process
-
-1. **Planning & Setup**
-   - Identified core requirements
-   - Set up development environment with Cursor
-   - Initialized project with Vite + React + TypeScript
-
-2. **Implementation**
-   - Started with MVP focusing on core timezone conversion
-   - Added interactive slider interface
-   - Implemented mobile-responsive design
-   - Tested across different devices and browsers
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-
-## 📝 License
-
-This project is open source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
