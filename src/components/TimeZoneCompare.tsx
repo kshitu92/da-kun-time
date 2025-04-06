@@ -79,12 +79,12 @@ export default function TimeZoneCompare() {
   }
 
   return (
-    <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-6" role="main">
+    <div className="w-full max-w-3xl bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6" role="main">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <h2 className="text-lg font-medium mb-2">First Time Zone</h2>
+          <h2 className="text-lg font-medium mb-2 dark:text-white">First Time Zone</h2>
           <select
-            className="w-full p-2 border rounded-md"
+            className="w-full p-2 border rounded-md bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600"
             value={firstZone}
             onChange={(e) => setFirstZone(e.target.value)}
             aria-label="Select first time zone"
@@ -98,9 +98,9 @@ export default function TimeZoneCompare() {
         </div>
 
         <div>
-          <h2 className="text-lg font-medium mb-2">Second Time Zone</h2>
+          <h2 className="text-lg font-medium mb-2 dark:text-white">Second Time Zone</h2>
           <select
-            className="w-full p-2 border rounded-md"
+            className="w-full p-2 border rounded-md bg-white dark:bg-gray-700 dark:text-white dark:border-gray-600"
             value={secondZone}
             onChange={(e) => setSecondZone(e.target.value)}
             aria-label="Select second time zone"
@@ -115,21 +115,21 @@ export default function TimeZoneCompare() {
       </div>
 
       <div className="my-8 text-center">
-        <h3 className="text-lg font-medium mb-2">Time Difference</h3>
-        <p className="text-2xl text-blue-500" role="status" aria-live="polite">
+        <h3 className="text-lg font-medium mb-2 dark:text-white">Time Difference</h3>
+        <p className="text-2xl text-blue-500 dark:text-blue-400" role="status" aria-live="polite">
           {timeDifference}
         </p>
       </div>
 
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-2">Adjust Time</h3>
+        <h3 className="text-lg font-medium mb-2 dark:text-white">Adjust Time</h3>
         <input
           type="range"
           min="-720"
           max="720"
           value={timeOffset}
           onChange={(e) => setTimeOffset(parseInt(e.target.value, 10))}
-          className="w-full"
+          className="w-full accent-blue-500"
           aria-label="Adjust time offset"
         />
       </div>
@@ -139,14 +139,14 @@ export default function TimeZoneCompare() {
           { zone: firstZone, label: 'First' },
           { zone: secondZone, label: 'Second' }
         ].map((item) => (
-          <div key={item.zone} className="text-center p-6 border rounded-lg">
-            <p className="text-sm text-gray-600 mb-2">
+          <div key={item.zone} className="text-center p-6 border rounded-lg dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
               {TIME_ZONES.find(tz => tz.value === item.zone)?.shortLabel}
             </p>
-            <p className="text-4xl font-bold" role="timer">
+            <p className="text-4xl font-bold dark:text-white" role="timer">
               {formatInTimeZone(adjustedTime, item.zone, 'h:mm a')}
             </p>
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
               {formatInTimeZone(adjustedTime, item.zone, 'EEEE')}
             </p>
           </div>
@@ -156,14 +156,14 @@ export default function TimeZoneCompare() {
       <div className="flex justify-center gap-4">
         <button
           onClick={handleCurrentTime}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-600 dark:hover:bg-blue-700"
           aria-label="Reset to current time"
         >
           Current Time
         </button>
         <button
           onClick={handleSwap}
-          className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+          className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:text-white"
           aria-label="Swap time zones"
         >
           Swap Time Zones
