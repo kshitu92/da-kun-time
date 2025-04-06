@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Da Kun Time (दा कुन Time)
 
-## Getting Started
+A minimalist timezone converter webapp focused on Nepal Standard Time and Central Standard Time conversions.
 
-First, run the development server:
+## 🎯 Problem Statement
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+"दा कुन Time?" (What time is it?) - A common question from my team in Nepal when setting up meetings.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+While many timezone converters exist, I needed something that specifically offers:
+- An intuitive slider interface for time conversion
+- Nepal Standard Time (UTC+5:45) and Central Standard Time (UTC-6:00) as defaults
+- Simple, free, and no ads
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Interactive Time Slider**: Easily visualize and adjust time differences
+- **Default Timezones**: 
+  - Nepal Standard Time (UTC+5:45)
+  - Central Standard Time (UTC-6:00)
+- **Real-time Updates**: Instant conversion as you adjust
+- **Mobile Responsive**: Works seamlessly on all devices
+- **Clean Interface**: No ads, no clutter
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: React.js with TypeScript
+- **Styling**: Tailwind CSS
+- **Time Management**: Date-fns library
+- **Development Tools**: 
+  - [Cursor](https://cursor.sh/) - AI-powered code editor
+  - Vite - Build tool
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/da-kun-time.git
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies**
+   ```bash
+   cd da-kun-time
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💡 Motivation
+
+This project was born from:
+- The need for a specialized timezone converter
+- Desire to explore modern development tools like Cursor
+- Practice with "vibe coding" - coding for fun and learning
+
+## 🔄 Development Process
+
+1. **Planning & Setup**
+   - Identified core requirements
+   - Set up development environment with Cursor
+   - Initialized project with Vite + React + TypeScript
+
+2. **Implementation**
+   - Started with MVP focusing on core timezone conversion
+   - Added interactive slider interface
+   - Implemented mobile-responsive design
+   - Tested across different devices and browsers
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- My team in Nepal for inspiring this project
+- The open-source community for the amazing tools and libraries
