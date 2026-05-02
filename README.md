@@ -2,14 +2,14 @@
 
 A minimalist timezone converter webapp.
 
-## 🎯 Problem Statement
+## Problem Statement
 
 While many timezone converters exist, I needed something that specifically offers:
 - An intuitive slider interface for time conversion
 - Nepal Standard Time (UTC+5:45) and Central Standard Time (UTC-6:00) as defaults
 - Simple, free, and no ads
 
-## ✨ Features
+## Features
 
 - **Interactive Time Slider**: Easily visualize and adjust time differences
 - **Default Timezones**: 
@@ -19,13 +19,13 @@ While many timezone converters exist, I needed something that specifically offer
 - **Mobile Responsive**: Works seamlessly on all devices
 - **Clean Interface**: No ads, no clutter
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React.js with TypeScript
 - **Styling**: Tailwind CSS
 - **Time Management**: Date-fns library
 
-## 🚀 Local Development
+## Local Development
 
 1. **Clone the repository**
    ```bash
